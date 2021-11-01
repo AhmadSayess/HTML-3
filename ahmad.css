@@ -1,0 +1,69 @@
+body{
+    background-color: cadetblue;
+    padding: 0px 25%;
+
+}
+header{
+    width: 100%;
+}
+header img{
+    height: 150px;
+    width: 100%;
+    border: 3px rgb(187, 24, 51);
+}
+.titel{
+    position: absolute;
+    top: 3%;
+    left: 32%;
+    color: blanchedalmond;
+}
+.nav{
+    list-style-type: none;
+    margin: 0;
+    padding: 2%;
+    overflow: hidden;
+    background-color: darkgrey;
+}
+.nav1{
+    float: left;
+    min-width: 16%;
+    border-right: 1px solid rgb(0, 1, 2);
+    
+
+}
+.nav1:last-child{
+    border: none;
+}
+.nav1 a{
+    text-align: center;
+    text-decoration: none;
+    color: darkblue;
+    display: block;
+
+}
+.nav1 a:hover{
+    background-color: gray;
+
+}
+.grid-container{
+    display: grid;
+    grid-template-areas: 
+    'menu gallery gallery gallery'
+    'menu gallery gallery gallery'
+    'block sub other other'
+    'block sub other other' ;
+    grid-gap: 10px;
+    background-color: dodgerblue;
+    padding: 15px;
+
+}
+.menu{grid-area: menu;}
+.block{grid-area: block;}
+.gallery{grid-area: gallery;}
+.sub{grid-area: sub;}
+.other{grid-area: other;}
+
+.other{
+    border-left: 2px solid wheat;
+    padding: 0 9px;
+}
